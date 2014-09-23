@@ -20,8 +20,7 @@ while true
   pc = player_choice = get_player_move.upcase
 
   # get the bot's move
-  rng = Random.new
-  bc = bot_choice = ["P", "R", "S"][rng.rand(0..2)]
+  bc = bot_choice = ["P", "R", "S"].sample
 
   # adjudicate
   case
